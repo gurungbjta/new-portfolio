@@ -1,38 +1,149 @@
-.App {
+* {
+  box-sizing: border-box;
+  word-spacing: 10px;
+}
+
+:root{
+  --lightPink: #F9E0F8;
+}
+
+body{
+  background: var(--lightPink) !important;
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+#name{
+  font-family: 'Martel Sans', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.navbar{
+  font-family: 'Amatic SC', cursive;
+  font-size: 27px;
+}
+
+.navb{
+  color: #CA97D4;
+}
+
+.navb:hover{
+  color: #99CCFF;
+  text-decoration: none;
+}
+
+.activeNav{
+  color: rgb(238, 77, 238);
+}
+
+.whiteBox{
+  background-color: #F9E0F8;
+  width: 500px;
+  height: 220px;
+  outline: thick solid #fafcfa;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.gitClick{
+  color: #CA97D4;
+}
+
+.gitClick:hover{
+  color: #99CCFF;
+  text-decoration: none;
+}
+
+.dream{
+  margin-left: 32rem;
+  margin-top: -6rem;
+  outline: thick solid #fafcfa;
+  position: absolute;
+  z-index: 1;
+}
+
+.home{
+  position: relative;
+}
+
+.center{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer{
+  position: absolute;
+  top: 52rem;
+  /* left: 30rem; */
+  bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stickers1{
+  position: absolute;
+  top: 25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.stickers{
+  position: absolute;
+  border-radius: 5px;
+  top: 35rem;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.gitIcon{
+  font-size: 3.1rem;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gitIcon:hover{
+  color: #6F767D;
+}
+
+.icon{
+  font-size: 4rem;
+  color: black;
+}
+
+.icon:hover{
+  color: #6F767D;
+}
+
+.frame{
+  height: 600px;
+  width: 500px;
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
+}
+
+.texts{
+  font-family: 'Cutive Mono', monospace;
+}
+
+.gif{
+  position: absolute;
+  left: 40rem;
+  top: 15em;
+}
+
+.projects{
+  line-height: 15px;
+}
+
+.projLinks{
+  color: #CA97D4;
+}
+
+.projLinks:hover{
+  color: #99CCFF;
+  text-decoration: none;
+}
+
+.aboutLeft{
+  margin-left: 5rem;
+}
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
