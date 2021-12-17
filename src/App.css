@@ -41,9 +41,16 @@ body{
   width: 500px;
   height: 220px;
   outline: thick solid #fafcfa;
+  border-radius: 15px;
   margin-top: 2rem;
   position: relative;
   z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .whiteBox {
+    outline: none;
+  }
 }
 
 .gitClick{
@@ -58,7 +65,7 @@ body{
 .dream{
   margin-left: 32rem;
   margin-top: -6rem;
-  outline: thick solid #fafcfa;
+  /* outline: thick solid #fafcfa; */
   position: absolute;
   z-index: 1;
 }

@@ -9,7 +9,7 @@ export default function About() {
                 <div className="row ml-5 mt-3 ">
                     <div className="col-md-6 text-center order-2 order-md-1" style={{height: '300px', width:'400px', lineHeight: '28px'}}>
                         <p>
-                            After moving to the SF Bay Area six years ago from Nepal, my fondness for tech grew even more profound. 
+                            After moving to the SF Bay Area seven years ago from Nepal, my fondness for tech grew even more profound. 
                             I feel beyond blessed to be surrounded by the Silicon Valley, and moreover, it inspires me every second of my day to give valuable contribution to the tech industry as a Software Engineer. 
                             I love what I do and nothing gives me immense joy than to solve world problems via code.
                         </p>

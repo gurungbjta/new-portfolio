@@ -12,6 +12,12 @@ export default function Project() {
                     <div className="mt-1 projects">
                         <ul>
                             <div>
+                                <a className="projLinks" href="https://github.com/gurungbjta/cs151Project18"><li>Tic Tac Toe Board Game</li></a>
+                                - Using OOP design patterns and Java, created a Tic-Tac-Toe game where two players can play at the same time
+                            </div>
+                        </ul>
+                        <ul>
+                            <div>
                                 <a className="projLinks" href="https://github.com/gurungbjta/fb-copy"><li>Facebook Clone</li></a>
                                 - Made a front-end clone of Facebook page particularly the Sign in and Sign up page using React
                             </div>
@@ -19,10 +25,11 @@ export default function Project() {
                         </ul>
                         <ul>
                             <div>
-                                <a className="projLinks" href="https://github.com/gurungbjta/netflix-clone"><li>Netflix Clone</li></a>
-                                - Made a front-end clone of Netflix page using React including the Sign in, Sign up page and Membership subscription plans
+                                <a className="projLinks" href="https://github.com/jamessnguyenn/2021-fall-cs160-team-iron-man"><li>EZ Apply Job Application</li></a>
+                                - Created a web application page called "EZ Apply" as a group project using MERN stack where job seekers can quickly apply for jobs with one simple click. 
                             </div>
                         </ul>
+                        
                         <ul>
                             <div>
                                 <a className="projLinks" href="https://beach-resorts-react.netlify.app/"><li>Beach Resort Booking</li></a>
@@ -41,22 +48,18 @@ export default function Project() {
                                 - Made and deployed a website for phone store using React where users can add products to cart, remove from cart and check out through PayPal Sandbox
                             </div>
                         </ul>
-                        <ul>
-                            <div>
-                                <a className="projLinks" href="https://github.com/gurungbjta/cs151Project18"><li>Tic Tac Toe Board Game</li></a>
-                                - Using OOP design patterns and Java, created a Tic-Tac-Toe game where two players can play at the same time
-                            </div>
-                        </ul>
+                        
                         <div className="pl-4" style={{wordSpacing: '5px'}}>For more projects, click <a className="projLinks" href="https://github.com/gurungbjta">here</a> to go to my github.</div>
                     </div>
                 </div>
             </div>
 
             <div className="d-none d-md-inline gif">
-                <img src={work} alt="work" style={{borderRadius: '5px'}}/>
+                <img src={work} alt="work" style={{borderRadius: '10px'}}/>
                 <div style={{fontSize:'7px'}} >gif by milktop via <a href="https://www.pinterest.com/pin/191051209171976843/" style={{color: 'black', textDecoration: 'none'}}>Pinterest</a></div>
             </div>
 
+            <br />
             <br />
         </div>
 
