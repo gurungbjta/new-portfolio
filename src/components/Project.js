@@ -25,7 +25,7 @@ export default function Project() {
                         </ul>
                         <ul>
                             <div>
-                                <a className="projLinks" href="https://github.com/jamessnguyenn/2021-fall-cs160-team-iron-man"><li>EZ Apply Job Application</li></a>
+                                <a className="projLinks" href="https://ez-apply.vercel.app/"><li>EZ Apply Job Application</li></a>
                                 - Created a web application page called "EZ Apply" as a group project using MERN stack where job seekers can quickly apply for jobs with one simple click. 
                             </div>
                         </ul>
