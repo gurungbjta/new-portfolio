@@ -1,4 +1,5 @@
 import React, { useState }  from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Navbar () {
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
@@ -14,10 +15,10 @@ export default function Navbar () {
                         </button>
 
                         <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse justify-content-around`} id="ham">
-                            <a className="nav-link navb" href="/">HOME</a>
-                            <a className="nav-link navb" href="/about">ABOUT ME</a>
-                            <a className="nav-link navb" href="/projects">PROJECTS</a>
-                            <a className="nav-link navb" href="/contact">CONTACT ME</a>
+                            <Link className="nav-link navb" to="/">HOME</Link>
+                            <Link className="nav-link navb" to="/about">ABOUT ME</Link>
+                            <Link className="nav-link navb" to="/projects">PROJECTS</Link>
+                            <Link className="nav-link navb" to="/contact">CONTACT ME</Link>
                         </div>
                     </nav>
                 </div>
