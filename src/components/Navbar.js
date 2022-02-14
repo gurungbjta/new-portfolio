@@ -1,6 +1,6 @@
 import React, { useState }  from 'react'
 
-export default function NavBar () {
+export default function Navbar () {
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
