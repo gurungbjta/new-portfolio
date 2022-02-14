@@ -5,13 +5,13 @@ import {Route, Switch} from 'react-router-dom'
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar';
 import Project from './components/Project';
 
 function App() {
   return (
     <>
-    <Navbar />
+    <NavBar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact  path="/about" component={About} />

@@ -10,12 +10,23 @@
 body{
   background: var(--lightPink) !important;
   font-family: 'Quicksand', sans-serif !important;
+  /* overflow-x: hidden; */
 }
 
 #name{
   font-family: 'Martel Sans', sans-serif;
   font-weight: bold;
   font-size: 30px;
+}
+
+@media (max-width: 767px){
+  #ham{
+    position: absolute;
+    z-index: 999;
+    top: 48px;
+    background-color: rgba(255, 239, 254, 0.945);
+    border-radius: 5px;
+  }
 }
 
 .navbar{
@@ -36,21 +47,12 @@ body{
   color: rgb(238, 77, 238);
 }
 
-.whiteBox{
-  background-color: #F9E0F8;
-  width: 500px;
-  height: 220px;
-  outline: thick solid #fafcfa;
-  border-radius: 15px;
-  margin-top: 2rem;
-  position: relative;
-  z-index: 2;
-}
-
-@media (max-width: 600px) {
-  .whiteBox {
-    outline: none;
-  }
+.home-container{
+  display: flex;
+  justify-content: center; 
+  overflow: hidden;
+  overflow-y: hidden;
+  margin: 3.5em;
 }
 
 .gitClick{
@@ -62,39 +64,114 @@ body{
   text-decoration: none;
 }
 
-.dream{
-  margin-left: 32rem;
-  margin-top: -6rem;
-  /* outline: thick solid #fafcfa; */
-  position: absolute;
-  z-index: 1;
+@media (min-width: 575px) and (max-width: 697px){
+  .dream{
+      text-align: center;
+  }
 }
 
-.home{
-  position: relative;
+@media (min-width: 0px) and (max-width: 281px){
+  .comp1{
+    display: none;
+  }
+
+  .love1{
+    display: none;
+  }
+
+  .comp2{
+    display: none;
+  }
+
+  .love2{
+    display: none;
+  }
 }
 
-.center{
-  text-align: center;
+@media (min-width: 0px) and (max-width: 359px){
+  .comp2{
+      display: none;
+  }
+
+  .love2{
+    display: none;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 489px){
+  .comp2{
+    display: none;
+  }
+  .love2{
+    display: none;
+  }
+}
+
+@media (min-width: 490px) and (max-width: 601px){
+  .love2{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 863px){
+  .comp1{
+    display: none;
+  }
+
+  .love1{
+    display: none;
+  }
+
+  .comp2{
+    display: none;
+  }
+
+  .love2{
+    display: none;
+  }
+}
+
+@media (min-width: 864px) and (max-width: 1121px){
+  .love2{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 779px){
+  .dream-img{
+    width: 400px;
+    height: 300px;
+  }
+
+  .dream{
+    text-align: center;
+  }
+}
+
+@media (min-width: 780px) and (max-width: 887px){
+  .dream-img{
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 888px) and (max-width: 901px){
+  .comp2{
+    display: none;
+  }
+}
+
+@media (min-width: 888px) and (max-width: 1127px){
+  .dream-img{
+    width: 400px;
+    height: 300px;
+  }
 }
 
 .footer{
-  position: absolute;
-  top: 52rem;
-  /* left: 30rem; */
-  bottom: 0;
-}
-
-.stickers1{
-  position: absolute;
-  top: 25rem;
-}
-
-.stickers{
-  position: absolute;
-  border-radius: 5px;
-  top: 35rem;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gitIcon{
@@ -107,7 +184,7 @@ body{
 }
 
 .icon{
-  font-size: 4rem;
+  font-size: 4.1rem;
   color: black;
 }
 
@@ -115,26 +192,53 @@ body{
   color: #6F767D;
 }
 
+
 .frame{
-  height: 600px;
-  width: 500px;
-  background-color: white;
-  position: relative;
+  width: 40vw;
+  height: 90vh;
   border-radius: 5px;
+  flex: 1.5;
 }
 
-.texts{
-  font-family: 'Cutive Mono', monospace;
+@media (min-width: 576px) and (max-width: 798px){
+  .gif{
+      text-align: center;
+  }
 }
 
-.gif{
-  position: absolute;
-  left: 40rem;
-  top: 15em;
+@media (min-width: 799px) and (max-width: 1118px){
+  .gif{
+    text-align: center;
+  }
+
+  .gif-image{
+      width: 90%;
+      height: 50%;
+  }
+}
+
+@media (min-width: 1366px){
+  .gif{
+    margin-left: 6em;
+    padding-top: 3em;
+  }
+}
+
+.projects{
+  background-color: white;
+  border-radius: 15px;
+}
+
+.project-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3.5em;
 }
 
 .projects{
   line-height: 15px;
+  font-family: 'Cutive Mono', monospace;
 }
 
 .projLinks{
@@ -154,3 +258,187 @@ body{
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
+.about-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.girl-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.pinkComp-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.about-texts{
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+@media (max-width: 557px){
+  .about-texts{
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 558px) and (max-width: 764px){
+  .about-texts{
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media (max-width: 557px){
+  .girl-col{
+    padding-bottom: 1em;
+  }
+}
+
+@media (max-width: 767px){
+  .contact-container{
+    margin: 3em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px){
+  .contact-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 3em;
+  }
+
+  .contact-text{
+    margin-left: 2em;
+  }
+}
+
+@media (min-width: 1036px){
+  .contact-text{
+    margin-top: -7em;
+  }
+}
+
+
+.contact-girl-div{
+  padding-left: 3em;
+}
+
+.contact-girl-img{
+  height: 500px;
+  width: 500px;
+  border-radius: 15px;
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+  .contact-girl-img{
+    height: 310px;
+    width: 350px;
+  }
+
+  .contact-text{
+    padding: 3em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px){
+  .contact-girl-img{
+    height: 300px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 437px){
+  .contact-comp1{
+    display: none;
+  }
+
+  .contact-love1{
+    display: none;
+  }
+
+  .contact-comp2{
+    display: none;
+  }
+
+  .contact-love2{
+    display: none;
+  }
+}
+
+@media (min-width: 438px) and (max-width: 455px){
+  .contact-comp1{
+    padding-bottom: 1em;
+  }
+
+  .contact-love1{
+    padding-bottom: 1em;
+  }
+}
+
+@media (min-width: 456px) and (max-width: 681px){
+  .contact-love2{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 903px){
+  .contact-girl-img{
+    height: 300px;
+    width: 350px;
+  }
+
+  .contact-comp2{
+    display: none;
+  }
+
+  .contact-love2{
+    display: none;
+  }
+}
+
+@media (min-width: 904px) and (max-width: 935px){
+  .contact-love2{
+    display: none;
+  }
+
+  .contact-comp2{
+    display: none;
+  }
+}
+
+@media (min-width: 936px) and (max-width: 1000px){
+  .contact-love2{
+    display: none;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1035px){
+  .contact-love1{
+    padding-bottom: 1em;
+  }
+
+  .contact-comp1{
+    padding-bottom: 1em;
+  }
+
+}
+
+@media (min-width: 1036px) and (max-width: 1165px){
+  .contact-love2{
+    display: none;
+  }
+}
+
+
